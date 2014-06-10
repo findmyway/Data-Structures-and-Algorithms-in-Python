@@ -4,5 +4,7 @@
 # Created Time: 2013/12/17 9:01:47
 if __name__ == '__main__':
     from itertools import permutations
-    for x in permutations(reversed([1, 2, 3, 4, 5]), 3):
-        print(x)
+    s = 'catdog'
+    for i in range(len(s)):
+        for x in permutations(s, i + 1):
+            print(''.join(x))

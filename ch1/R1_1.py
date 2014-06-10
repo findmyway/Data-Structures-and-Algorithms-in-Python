@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
+
+
 def is_multiple(n, m):
-    if n % m == 0:
-        return True
-    else:
-        return False
+    return n % m == 0
+
 if __name__ == "__main__":
-    print(is_multiple(2, 3))
+    a, b = input("input 2 int, seperate with blank : ").split()
+    print("is multiple ? ", is_multiple(int(a), int(b)))

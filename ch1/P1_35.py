@@ -2,15 +2,13 @@
 # Author: TianJun
 # Mail: find_my_way@foxmail.com
 # Created Time: 2013/12/17 9:26:15
+
+
 def birthday_paradox():
-    """验证birthday_paradox是否是真的
-    return True 真的
-           False假的
-    """
     from random import randint
     from C1_15 import is_distinct
     for pepNum in range(5, 101, 5):
-        #每种情况测试1000次
+        #each case test 1000 times
         nTimes = 0
         for i in range(1000):
             birthdays = []
