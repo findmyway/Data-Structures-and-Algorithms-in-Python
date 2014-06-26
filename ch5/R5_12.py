@@ -1,2 +1,5 @@
-a = [[1, 2, 3], [2, 3, 4]]
-sum_a = sum(sum(x) for x in a)
+from pprint import pprint
+data = [[i for i in range(10)] for j in range(10)]
+pprint(data)
+
+print("sum of data:", sum(sum(x) for x in data))
