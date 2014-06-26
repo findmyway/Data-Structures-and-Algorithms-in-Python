@@ -17,6 +17,5 @@ for k in range(30):
     b = sys.getsizeof(data)
     if b > cur and a > 0:
         cur = b
-        print('Exausted when leng:w
-              th = {0}'.format(a - 1))
+        print('''Exausted when lenth = {0}'''.format(a - 1))
     data.append(None)

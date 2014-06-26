@@ -107,3 +107,7 @@ if __name__ == '__main__':
   total = 0
   for entry in v:            # implicit iteration via __len__ and __getitem__
     total += entry
+  x = Vector(3)
+  x[0] = -100
+  y = -x
+  print(y)
